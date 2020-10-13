@@ -1,0 +1,1 @@
+print(32+34) #adds two numbers and prints them
