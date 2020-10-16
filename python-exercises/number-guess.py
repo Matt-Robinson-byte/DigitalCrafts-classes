@@ -4,10 +4,15 @@ play_again = True
 print("I am thinking of a number between 1 and 10")
 while play_again:
     secret_num = random.randint(1, 10)
-    guess_number = 0
+    guess_number = 1
     guess_counter = 0 
     while guess_number != secret_num and guess_counter < 5:
-        guess_number = int(input("What's the number? "))
+        while True:
+            try:
+                guess_number = int(input("What's the number? "))
+                break
+            except ValueError:
+                print("Oh no!! That's not a number!")
         guess_counter += 1
         if guess_number > secret_num:
             print(f"{guess_number} is to high.")
