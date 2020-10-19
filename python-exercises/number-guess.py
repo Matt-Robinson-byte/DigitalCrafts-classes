@@ -1,8 +1,8 @@
 import random
-
+answer = True
 play_again = True
-print("I am thinking of a number between 1 and 10")
 while play_again:
+    print("I am thinking of a number between 1 and 10")
     secret_num = random.randint(1, 10)
     guess_number = 1
     guess_counter = 0 
@@ -24,6 +24,13 @@ while play_again:
             print(f"You have {5 - guess_counter} guesses left")
         elif guess_counter and guess_number != secret_num:
             print("You have no guesses left")
-    answer = input("Do you want to play again? (Y or N)")
-    if answer == 'N':
-        play_again = False
+    while answer != 'Y' or answer != 'N':
+        answer = input("Do you want to play again? (any key to play or N to quit)")
+        if answer == 'N':
+            play_again = False
+            break
+        elif answer == 'Y':
+            play_again = True
+            break
+        else:
+            print("I didn't get that")
