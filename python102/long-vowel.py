@@ -5,7 +5,7 @@ for letter in word:
     print(letter,end='')
     prev = letter
     
-
+    
     if prev == letter:
         print(letter,end='')
         print(letter,end='')
