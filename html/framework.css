@@ -1,0 +1,22 @@
+p{
+    font-size: medium;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    color: black;
+}
+.estaciones {
+    font-size: small;
+    padding: 3px;
+}
+img{
+    padding: 80px;
+    border-radius: 30px;
+    border-width: 5px;
+    border: darkgreen;
+}
+
+.container div{
+    display: flex;
+}
+.item{
+    padding: 30px;
+}

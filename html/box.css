@@ -1,0 +1,15 @@
+div:first-child{
+    padding: 10px;
+    border: 1px;
+    background: red;
+}
+div{
+    padding: 10px 100px 10px;
+    border: 1px;
+    background: red;
+}
+div:last-child{
+    padding: 20px 100px 30px 50;
+    background: chartreuse;
+    margin: 100px 4px 4px;
+}
