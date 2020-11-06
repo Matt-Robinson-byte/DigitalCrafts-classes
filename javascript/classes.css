@@ -1,0 +1,18 @@
+.intro{
+    background-color: yellow;
+    color: tomato;
+
+}
+.here {
+    color: black;
+    background-color: turquoise;
+}
+
+.meat{
+    color: pink;
+    background-color: blueviolet;
+}
+
+.highlighted{
+    background-color: crimson;
+}
